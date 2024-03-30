@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bag_Site</title>
+        <title>  حقيبة الصدر متعددة الوظائف  </title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/all.min.css">
@@ -15,6 +15,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
       <!-- countdown  timer -->
         <link rel="stylesheet" href="css/flip-clock.css">
+
+        
+
       </head>
     <body>
 
@@ -27,14 +30,13 @@
             </div>
 
             <div class="bottom-head">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container">
+                <nav class="navbar container navbar-expand-lg bg-body-tertiary">
                         <div class="logo">
                             <img src="images/logo.svg" class="logo-img"/>
-                            <a class="navbar-brand tajawal-black logo-name" href="#" > متجري</a>
+                            <a class=" tajawal-black logo-name me-1" href="#" > متجري</a>
                         </div>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                      <button class="navbar-toggler" style="border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="font-size: 16px; font-weight: bold;"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -45,20 +47,19 @@
                             <a class="nav-link" href="#">مميزات</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#"> تواصل معنا </a>
+                            <a class="nav-link" aria-current="page" href="#"> مراجعات </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">مميزات</a>
+                            <a class="nav-link" href="#">  تواصل معنا </a>
                           </li>
                           
                           
                         </ul>
-                        <div class="d-flex me-4" >
-                          <button class="order-now">اشتري الان</button>
+                        <div class="d-flex head-btn" >
+                          <button class="order-now" style="font-weight: 500;">اشتري الان</button>
                         </div>
                       </div>
-                    </div>
-                  </nav>
+                </nav>
             </div>
         </section>
 
@@ -66,22 +67,42 @@
         <section id="main">
             <div class="container">
 
-                <div class="row mb-3">
-                    <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-12 p-0">
                       <div class="top main-border w-100 d-flex align-items-center justify-content-center ">
                         <div class="d-flex align-items-center">
                           <img src="images/funnel.svg" class="img-funnel ps-2"/>
                           <h5 class="tajawal-bold ps-3">عرض محدود : </h5>
                         </div>
                         
-                        <div id="timer" class="tajawal-regular"></div>
+                        <div class="countdown">
+                          <div id="seconds" class="countdown-item">
+                            <span class="_1">ثانية</span>
+                            <span id="seconds-value" class="value">00</span> : 
+                          </div>
+                          <div id="minutes" class="countdown-item">
+                            <span class="_1">دقيقة</span>
+                            <span id="minutes-value" class="value">00</span> : 
+                          </div>
+                          <div id="hours" class="countdown-item">
+                            <span class="_1">ساعة</span>
+                            <span id="hours-value" class="value">00</span> :
+                          </div>
+                          <div id="days" class="countdown-item">
+                            <span class="_1">يوم</span>
+                            <span id="days-value" class="value">00</span>
+                          </div>
+                        </div>
+                        
+                        <!-- <div id="timer" class="tajawal-regular"></div> -->
                       </div>
                     </div>
                     
                 </div>
 
-                <div class="row d-flex align-items-start justify-content-around pt-3">
-                  <div class="col-lg-5 col-md-12 col-sm-12  right-side">
+                <div class="row d-flex align-items-start justify-content-around pt-3 bottom">
+
+                  <div class="col-lg-5 col-md-12 col-sm-12  right-side" >
                     
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
@@ -140,6 +161,7 @@
                         
                       </div>
 
+                      <div>
                       <ol class="carousel-indicators">
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active thumbnail">
                           <img class="d-block " src="images/main1.avif" alt="First slide">
@@ -147,62 +169,63 @@
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="thumbnail">
                           <img class="d-block " src="images/main2.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="thumbnail">
                           <img class="d-block " src="images/main3.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="thumbnail">
                           <img class="d-block " src="images/main4.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="thumbnail">
                           <img class="d-block " src="images/main5.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="thumbnail">
                           <img class="d-block " src="images/main6.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" class="thumbnail">
                           <img class="d-block " src="images/main7.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" class="thumbnail">
                           <img class="d-block " src="images/main8.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" class="thumbnail">
                           <img class="d-block " src="images/main9.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" class="thumbnail">
                           <img class="d-block" src="images/main10.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" class="thumbnail">
                           <img class="d-block" src="images/main11.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" class="thumbnail">
                           <img class="d-block" src="images/main12.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" class="thumbnail">
                           <img class="d-block " src="images/main13.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" class="thumbnail">
                           <img class="d-block " src="images/main14.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" class="thumbnail">
                           <img class="d-block " src="images/main15.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15" class="thumbnail">
                           <img class="d-block " src="images/main16.avif" alt="First slide">
                         </li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="17" class="thumbnail">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16" class="thumbnail">
                           <img class="d-block " src="images/main17.avif" alt="First slide">
                         </li>
                       </ol>
+                    </div>
                       
                     </div>
 
                   </div>
 
-                  <div class="col-lg-5 col-md-12 col-sm-12 left-side main-border">
+                  <div class="col-lg-6 col-md-12 col-sm-12 left-side main-border">
 
                     <div class="row left-top d-flex flex-column">
 
-                        <div class="left-rating d-flex align-items-center">
+                        <div class="left-rating">
                             <div class="d-flex align-items-center rat-box">
                               <div class="star-rating ms-2">
                                 <span class="star" data-value="1">&#9733;</span>
@@ -211,7 +234,7 @@
                                 <span class="star" data-value="4">&#9733;</span>
                                 <span class="star" data-value="5">&#9733;</span>
                               </div>
-                              <span>5.00</span>
+                              <span class="">5.00</span>
                             </div>
                             <div> 
                               <p>تقييم 5 نجوم من اكثر من <span>11</span> زبون</p> 
@@ -219,7 +242,7 @@
                         </div>
 
                         <div class="left-head">
-                          <h2 class="tajawal-bold ">  حقيبة الصدر متعددة الوظائف  </h2>
+                          <h1 class="tajawal-bold ">  حقيبة الصدر متعددة الوظائف  </h1>
                         </div>
 
                         <div class="left-cost">
@@ -233,31 +256,29 @@
                         </div>
                     </div>
 
-                    <div class="row item-container">
-                      <div class="col-12 d-flex align-items-center justify-content-between text-center item-box">
-                        <div class=" item">
+                    <div class="row d-flex align-items-center justify-content-center text-center item-container">
+                        <div class=" item ">
                           <img src="images/m-quality.svg" />
                           <h6> جودة عالية </h6>
                         </div>
-                        <div class=" item">
+                        <div class=" item ">
                           <img src="images/m-anti.svg" />
                           <h6>  مضادة للسرقة </h6>
                         </div>
-                        <div class=" item">
+                        <div class=" item ">
                           <img src="images/m-water.svg" />
                           <h6>  مقاومة للماء </h6>
                         </div>
-                        <div class=" item">
+                        <div class=" item ">
                           <img src="images/m-multi.svg" />
                           <h6>  متعددة الجيوب </h6>
                         </div>
-                      </div>
                     </div>
 
-                    <div class="row mt-5 form-container ps-3 pe-3">
+                    <div class="row mt-5 form-container">
                       <form>
-                        <div>
-                          <h5 class="text-center p-3 tajawal-medium">  للطلب, الرجاء ادخال التفاصيل : </h5>
+                        <div class="w-100 mb-4">
+                          <h5 class="tajawal-medium">  للطلب, الرجاء ادخال التفاصيل : </h5>
                         </div>
                         <div class="form-group">
                           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="الاسم بالكامل">
@@ -271,7 +292,7 @@
                       </form>
                     </div>
 
-                    <div class="row mt-4 ps-3 pe-3">
+                    <div class="row mt-4">
                       <div class="accordion accordion-flush" id="accordionFlushExample">
 
                         <div class="accordion-element">
@@ -351,6 +372,7 @@
                                 <label class="form-check-label pe-2" for="threeRadio">
                                   اشتري 3 و احصل على خصم 15٪
                                 </label>
+                                <div class="free"> <p> شحن مجاني </p> </div>
                               </div>
                               <div class="d-flex flex-column">
                                 <h5>EGP927.71</h5>
@@ -461,25 +483,25 @@
                       </div>
                     </div>
 
-                    <div class="row pb-5 pt-2 item-container" style="background-color: transparent;">
-                      <div class="col-12 d-flex align-items-center justify-content-between text-center item-box" >
-                        <div class=" item">
+                    <div class="row pb-5 pt-2 d-flex align-items-center justify-content-center text-center item-container" style="background-color: transparent;">
+                        
+                        <div class=" item w-25">
                           <img src="images/mi1.svg" />
                           <h6> الدفع عند الاستلام </h6>
                         </div>
-                        <div class=" item">
+                        <div class=" item w-25">
                           <img src="images/mi2.svg" />
                           <h6>  توصيل مجاني </h6>
                         </div>
-                        <div class=" item">
+                        <div class=" item w-25">
                           <img src="images/mi3.svg" />
                           <h6>  ضمانة 100% </h6>
                         </div>
-                        <div class=" item">
+                        <div class=" item w-25">
                           <img src="images/mi4.svg" />
                           <h6>  خدمة العملاء </h6>
                         </div>
-                      </div>
+
                     </div>
 
                   </div>
@@ -490,21 +512,22 @@
 
 
         <section id="product-description" class="mt-5 mb-5">
-          <div class="container p-5">
-            <div class="row p-4">
+          <div class="container ">
+            <div class="row pt-4 pb-4 d-flex align-items-center">
 
               <div class="col-lg-6 description">
                 <div>
                   <h3 class="tajawal-bold pb-3"> وصف المنتج :   </h3>
-                  <p class="tajawal-regular pb-3 para-desc">حقيبة كتف مضادة للسرقة، مقاومة للماء و المواد السائلة و مقاومة للسقوط،
+                  <p class="tajawal-regular pb-3">حقيبة كتف مضادة للسرقة، مقاومة للماء و المواد السائلة و مقاومة للسقوط،
                     خفيفة الوزن، متعددة الأغراض وقوية. تصميم بسيط وخفيف للحمل. تحتوي على جيب رئيسي واحد و3 جيوب بسحاب. تحتوي على مساحة كافية لجميع مستلزماتك الأساسية مثل أيباد وهاتف ومحفظة وبطاقة الائتمان والمفاتيح وسماعات الأذن وما إلى ذلك. كل ذلك في وقت واحد يحافظ على يديك حرتين حتى تتمكن من الاستمتاع بوقتك. رائعة للاستخدام في الأعمال أوالمشي لمسافات طويلة والتخييم والمدرسة وركوب الدراجات إلخ.</p>
                 </div>
+
                 <div>
                   
                   <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-element main-border">
                       <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #fff !important;">
                           <div class="btn-title">
                             <div>
                               <img src="images/logo.svg" class="logo-img"/>
@@ -528,7 +551,7 @@
                     </div>
                     <div class="accordion-element main-border">
                       <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="background-color: #fff !important;">
                           <div class="btn-title">
                             <div>
                               <img src="images/comp.svg" class="logo-img"/>
@@ -544,7 +567,7 @@
                     </div>
                     <div class="accordion-element main-border">
                       <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="background-color: #fff !important;">
                           <div class="btn-title">
                             <div>
                               <img src="images/star.svg" class="logo-img"/>
@@ -570,7 +593,7 @@
               <div class="col-lg-6 slider">
                 <!-- Slides with controls -->
               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner p-5">
+                <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="images/bag1.webp" class="d-block w-100" alt="...">
                   </div>
@@ -609,7 +632,7 @@
             </div>
             <div class="d-flex align-items-center left">
               <h6 class="ps-3">EGP929.72</h6>
-              <button class="order-now"> إشتري الان - الدفع عند الإستلام   </button>
+              <button class="static-btn"> إشتري الان - الدفع عند الإستلام   </button>
             </div>
           </div>
         </section>
@@ -639,8 +662,8 @@
 
 
         <section id="gallery" class="mt-5 mb-5">
-          <div class="container p-3">
-            <div class="row d-flex flex-column align-items-center justify-content-center">
+          <div class="container">
+            <div class="row d-flex flex-column align-items-center justify-content-center top">
               <div class="col-lg-7 text-center  title">
                 <h6 class="tajawal-bold">كن أنيقا</h6>
                 <h1 class="tajawal-extrabold">احصل على مظهر جديد يليق بك</h1>
@@ -713,35 +736,35 @@
         <section id="services" class="mt-5 mb-5">
           <div class="container">
             <div class="row service">
-              <div class="col-lg-6 col-md-12 col-sm-12 right-side">
+              <div class="col-lg-6 col-md-12 col-sm-12 right-side mb-4">
                 <img src="images/services-img.avif" class="w-100" />
               </div>
-              <div class="col-lg-6 col-md-12 col-sm-12 pe-5 left-side">
+              <div class="col-lg-6 col-md-12 col-sm-12 left-side">
                     <h6 class="tajawal-bold title"> لماذا هاته الحقيبة ؟ </h6>
                     <h1 class="tajawal-extrabold mt-4 mb-5">  القطعة المفقودة أخيرا هنا   </h1>
                     <div>
                       <div class=" d-flex mb-4  service-item">
                         <img src="images/serv1.svg" />
                         <div class="pe-2">
-                          <h5 class="tajawal-bold"> تتوفر على كل ماتحتاجه و أكثر. </h5>
+                          <h6 class="tajawal-bold"> تتوفر على كل ماتحتاجه و أكثر. </h6>
                           <p  class="tajawal-regular"> توفر لك هاته الحقيبة كل ماتحتاجه و أكثر، تجعلك تستغني عن أي بديل كنت تستعمله، لا تحتاج الان أكثر من حقيبة واحدة لتجمع كل أشيائك في مكان واحد. </p>
                         </div>
                       </div>
                       <div class=" d-flex mb-4  service-item">
                         <img src="images/serv2.svg" />
                         <div class="pe-2">
-                          <h5 class="tajawal-bold"> حاليا بالسعودية، اطلب وسيتم إيصالها لك أينما كنت. </h5>
+                          <h6 class="tajawal-bold"> حاليا بالسعودية، اطلب وسيتم إيصالها لك أينما كنت. </h6>
                           <p  class="tajawal-regular"> لا تحتاج الآن البحث عن هاته الحقيبة خارج البلد، الأن يمكنك طلبها و الحصول عليها داخل السعودية وبثمن معقول. </p>
                         </div>
                       </div>
                       <div class=" d-flex mb-4 service-item">
                         <img src="images/serv3.svg" />
                         <div class="pe-2">
-                          <h5 class="tajawal-bold">  حقيبة مع كل الضمانات. </h5>
+                          <h6 class="tajawal-bold">  حقيبة مع كل الضمانات. </h>
                           <p  class="tajawal-regular"> لا للتردد، بشراءك لهدا المنتج فأنت تحصل على العديد من الضمانات التي تأتي مع هاته الحقيبة. </p>
                         </div>
                       </div>
-                      <div class=" d-flex pt-5 service-item">
+                      <div class=" d-flex pt-3 service-item">
                         <button class="order-now">  إشتري الان - ادفع عند الإستلام </button>
                       </div>
                     </div>
@@ -769,17 +792,17 @@
             <div class="row d-flex align-items-center justify-content-between text-center mt-5 bottom-box">
               <div class="col-lg-3 col-md-12 col-sm-12">
                 <img src="images/vid1.svg"/>
-                <h5 class="tajawal-bold">  سهلة الاستعمال </h5>
+                <h6 class="tajawal-bold">  سهلة الاستعمال </h6>
                 <p class="tajawal-regular">  كما شاهدت فالحقيبة تمتاز بتصميم يجعلها سهلة الاستعمال ولاتحتاج وقت للتكيف. </p>
               </div>
               <div class="col-lg-3 col-md-12 col-sm-12">
                 <img src="images/vid2.svg"/>
-                <h5 class="tajawal-bold">  جودة عالية  </h5>
+                <h6 class="tajawal-bold">  جودة عالية  </h5>
                 <p class="tajawal-regular">  هاته أبرز النقاط التي نأخدها بعين الاعتبار، فالجودة هي  العامل رقم واحد لنجاح هاته الحقيبة. </p>
               </div>
               <div class="col-lg-3 col-md-12 col-sm-12">
                 <img src="images/vid3.svg"/>
-                <h5 class="tajawal-bold">  تصميم أنيق  </h5>
+                <h6 class="tajawal-bold">  تصميم أنيق  </h6>
                 <p class="tajawal-regular">  تصميم عصري وأنيق، يعطيك مظهرا جديدا يتماشى مع أسلوب اللباس أو اللوك الدي تفضله. </p>
               </div>
             </div>
@@ -789,11 +812,11 @@
 
         <section id="feedback" class="mt-5 mb-5">
           <div class="container">
-            <div class="row d-flex flex-column align-items-center justify-content-center text-center feedback">
-              <div class="col-lg-10 col-md-12 col-sm-12 ">
+            <div class="row d-flex flex-column align-items-center justify-content-center text-center feedback w-100">
+              <div class="col-lg-10 col-md-12 col-sm-12">
                 <img src="images/feedback.svg" />
                 <p class="tajawal-regular pb-5">  هده الحقيبة تجاوزت توقعاتي! لقد جربت العديد من الحقائب و لا واحدة منهم كانت عند تطلعاتي، إن هاته الحقيبة مثالية، متينة و آمنة، سهلة الاستعمال وتتمير بوزن خفيف ومميزات تجعلها الأفضل .  </p>
-                <h4 class="tajawal-bold">  محمد سعيد  </h4>
+                <h6 class="tajawal-bold">  محمد سعيد  </h6>
                 <span class="tajawal-regular">   زبون </span>
               </div>
             </div>
@@ -801,7 +824,7 @@
         </section>
 
 
-        <div id="avaliable-quantity" class="mb-5">
+        <section id="avaliable-quantity" class="mb-5">
           <div class="container">
             <div class="row">
               <div class="col-lg-6 col-md-12 col-sm-12 right-side">
@@ -813,22 +836,47 @@
                   <h6>  كمية محدودة  </h6>
                 </div>
                 <h1 class="tajawal-extrabold">  سارع في الحصول <br /> على هدا المنتج  </h1>
-                <p class="tajawal-regular pt-4 pb-4">  هاته الحقيبة تعرف طلبا كبيرا، وللأسف فالكمية محدودة، لذا سارع في الحصول عليها الآن قبل نهاية المدة المحددة للعرض.  </p>
-                <div class="flip-timer">
+                <p class="tajawal-regular pt-4 ">  هاته الحقيبة تعرف طلبا كبيرا، وللأسف فالكمية محدودة، لذا سارع في الحصول عليها الآن قبل نهاية المدة المحددة للعرض.  </p>
+                
+                <!-- <div class="flip-timer">
                   <ul class=" flip-clock-container flip-example">
                     <li class="flip-item-seconds">15</li>
                     <li class="flip-item-minutes">19</li>
                     <li class="flip-item-hours">21</li>
                   </ul>
+                </div> -->
+
+                <div class="cD">
+                  <div id="seconds" class="countdown-item">
+                    <span id="s-value" class="value">00</span> 
+                    <span class="_1">ثانية</span>
+                  </div>
+                  <div id="minutes" class="countdown-item">
+                    <span id="m-value" class="value">00</span>  
+                    <span class="_1">دقيقة</span>
+                  </div>
+                  <div id="hours" class="countdown-item">
+                    <span id="h-value" class="value">00</span> 
+                    <span class="_1">ساعة</span>
+                  </div>
+                  <div id="days" class="countdown-item">
+                    <span id="d-value" class="value">00</span>
+                    <span class="_1">يوم</span>
+                  </div>
                 </div>
-                <button class="order-now">  اشتري الان  </button>
+                
+
+                
+                <div class="w-100">
+                  <button class="order-now w-100">  اشتري الان  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
 
-        <section id="using" class="mt-5 mb-5">
+        <section id="using" class="mt-5">
           <div class="container">
             <div class="row d-flex flex-column align-items-center justify-content-center">
               <div class="col-lg-7 text-center  title">
@@ -838,7 +886,7 @@
               </div>
             </div>
 
-            <div class="row using-container">
+            <div class="using-container">
 
               <div class="col-12 d-flex align-items-center justify-content-around using-box">
                 <div class="col-lg-4 col-md-12 col-sm-12 gif-box">
@@ -855,7 +903,10 @@
 
               <div class="border-line"></div>
 
-              <div class="col-12 d-flex align-items-center justify-content-around using-box">
+              <div class="col-12 d-flex align-items-center justify-content-around using-box reverse-box">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <img src="images/gif2.gif" class="gif-img"/>
+                </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column ">
                   <div class="d-flex align-items-center pb-2">
                     <img src="images/two2.svg" class="num-img"/>
@@ -863,9 +914,7 @@
                   </div>
                   <p class="tajawal-medium">  الحقيبة توفر لك منافد وجيوب مخفية و سهلة الوصول لبطاقتك، لن تحتاج الأن للتوقف و إخراج ماتحتاجه من داخل الحقيبة أو من محفضة في جيبك، يكفي أن تمد يدك للمنفد و فتحه للوصول لبطاقتك بسهولة تامة.  </p>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <img src="images/gif2.gif" class="gif-img"/>
-                </div>
+                
               </div>
 
               <div class="border-line"></div>
@@ -885,7 +934,10 @@
 
               <div class="border-line"></div>
 
-              <div class="col-12 d-flex align-items-center justify-content-around using-box">
+              <div class="col-12 d-flex align-items-center justify-content-around using-box reverse-box">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <img src="images/gif4.gif" class="gif-img"/>
+                </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column ">
                   <div class="d-flex align-items-center pb-2">
                     <img src="images/four4.svg" class="num-img"/>
@@ -893,9 +945,7 @@
                   </div>
                   <p class="tajawal-medium">  يمكن استعمال الحقيبة لحماية أدواتك من التبلل، إدا كنت تقود دراجتك تحت المطر ـ أو تحمل معك مستلزمات إلكترونية تريد أن تحميها من البلل في الأجواء الماطرة فهاته الحقيبة تتكلف بالمهمة.  </p>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <img src="images/gif4.gif" class="gif-img"/>
-                </div>
+                
               </div>
 
             </div>
@@ -909,7 +959,7 @@
               <div class="col-12 top">
                 <img src="images/feedback.svg" class="recom-img" />
                 <div class="d-flex align-items-center justify-content-between mb-5 recom-box">
-                  <div class="col-lg-4 col-md-12 col-sm-12"><h1 class="tajawal-extrabold "> توصيات من زبنائنا :  </h1></div>
+                  <h1 class="tajawal-extrabold "> توصيات من زبنائنا :  </h1>
                   <div class="col-lg-8 col-md-12 col-sm-12"><p class="tajawal-medium"> سارع في الحصول على هاته الحقيبة التي تحظى  بإعجاب وتقييم عالي من زبنائنا، فالجودة التي تتميز بها تنعكس على آراء الزبناء، إقر أ بعض من هاته الآراء للتأكد.  </p>
                   </div>  
                 </div>
@@ -918,12 +968,12 @@
 
             <div class="border-line" ></div>
 
-            <div class="row d-flex pt-5 mt-5 align-items-center justify-content-around recommend-container">
+            <div class="row d-flex  align-items-center justify-content-around recommend-container">
 
               <div class="col-lg-3 col-md-12 col-sm-12 d-flex flex-column justify-content-between main-border recommend-box">
                 <img src="images/person1.avif"  class="person-img" />
                 <h5>  إليزابيث روز  </h5>
-                <span class="tajawal-medium pb-3">  مدريد اسبانيا  </span>
+                <span class="tajawal-medium pb-2">  مدريد اسبانيا  </span>
                 <p class=" tajawal-regular">  هده الحقيبة تجاوزت توقعاتي! لقد جربت العديد من الحقائب و لا واحدة منهم كانت عند تطلعاتي، إن هاته الحقيبة مثالية، متينة و آمنة، سهلة الاستعمال وتتمير بوزن خفيف ومميزات تجعلها الأفضل .  </p>
                 <i class="fa-solid fa-quote-right"></i>
               </div>
@@ -956,15 +1006,17 @@
                 <h6 class="tajawal-bold">  تفاصيل الحقيبة  </h6>
                 <h1 class="tajawal-extrabold">  كل ماتحتاجه و أكثر   </h1>
                 <p class="tajawal-regular">  احصل على الحقيبة التي تستحق، كل ما تحتاجه في حقيبة واحدة، الأفضل الآن في السوق بشهادة زبناءنا، استمتع بكل الامتيازات التي توفرها لك هاته الحقيبة.  </p>
-                <button class="order-now">  اشتري الان  </button>
+                <div class="w-50 me-auto ms-auto">
+                  <button class="order-now w-100">  اشتري الان  </button>
+                </div>
               </div>
             </div>
 
-            <div class="row d-flex flex-column align-items-center justify-content-center mt-5">
+            <div class="row d-flex flex-column align-items-center justify-content-center bottom">
 
               <div class="col-12 d-flex align-items-center justify-content-between mb-5 details-container">
 
-                <div class="col-lg-5 col-md-12 col-sm-12 details-box d-flex flex-column justify-content-between">
+                <div class=" details-box d-flex flex-column justify-content-between details-box1">
                   <div class="top">
                     <img src="images/details1.svg" class="icon-img"/>
                     <h2 class="tajawal-bold">  عالية <span class="special">الكثافة</span> ، مضادة للماء </h2>
@@ -975,7 +1027,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-5 col-md-12 col-sm-12 details-box d-flex flex-column justify-content-between">
+                <div class=" details-box d-flex flex-column justify-content-between details-box2">
                   <div class="top">
                     <img src="images/details2.svg" class="icon-img"/>
                     <h2 class="tajawal-bold">  قفل  <span class="special">مضاد </span> للسرقة  </h2>
@@ -987,13 +1039,13 @@
                 </div>
               </div>
 
-              <div class="col-12 details-third-box d-flex align-items-center justify-content-around third-container">
-                <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="col-12 third-container">
+                <div class="col-lg-6 col-md-12 col-sm-12 desc-box">
                   <img src="images/details3.svg" class="icon-img"/>
                   <h2 class="tajawal-bold">  مساحة تخزين <span class="special">معقولة</span> </h2>
                   <p class="tajawal-medium">  تتمير هاته الحقيبة بتصميم فريد يعطيك رونقا و مظهرا أنيق و عصري، بالإضافة للمميزات التي التي تتميز بها هاته الحقيبة فإنها بتصميمها القوي تعطيك مظهرا مميز.  </p>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 img-box">
+                <div class="col-lg-6 col-md-12 col-sm-12 img-box">
                   <img src="images/det3.avif" class="det-img"/>
                 </div>
               </div>
@@ -1015,7 +1067,7 @@
               </div>
             </div>
 
-            <div class="row d-flex align-items-center justify-content-around mt-5 mb-5 saving-container">
+            <div class="row d-flex align-items-center justify-content-around mb-5 saving-container">
 
               <div class="col-lg-3 col-md-12 col-sm-12 text-center saving-box">
                 <div class="bags-box mb-4">
@@ -1102,7 +1154,9 @@
                 </div>
                 <h1 class="tajawal-extrabold">  مراجعات المستخدمين   </h1>
                 <p class="tajawal-regular">  في الاسفل مراجعات و تقييمات زبائننا الذين اعجبهم منتجنا و ارادوا اخبارنا بذلك. يمكنك أنت أيضا أن تضيف مراجعتك لهدا المنتج إدا كنت من الزبناء الدين اشتروه.  </p>
-                <button class="order-now">   اكتب مراجعة   </button>
+                <div class="w-50 m-auto">
+                  <button class="order-now">   اكتب مراجعة   </button>
+                </div>
               </div>
             </div>
 
@@ -1318,7 +1372,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-5 col-md-12 col-sm-12 main-border review-box">
+              <div id="hiddenBox" class="col-lg-5 col-md-12 col-sm-12 main-border review-box">
                 <div class="w-100 d-flex align-items-center justify-content-center">
                   <div class="star-rating">
                     <span class="star" data-value="1">&#9733;</span>
@@ -1328,21 +1382,22 @@
                     <span class="star" data-value="5">&#9733;</span>
                   </div>
                 </div>
-                <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
-                  <h4 class="tajawal-bold"> عمر </h4>
-                  <span class="tajawal-regular age">  منذ عامين  </span>
-                </div>
-                <p class="tajawal-medium">  منتج رائع ودكي التصميم، وصل بجودة جيدة، كما هو موصوف في الصور، خفيف الوزن و يتوفر على جميع المميزات المشاؤ إليها في الموقع. </p>
-                <div class="d-flex align-items-center justify-content-start">
-                  <img src="images/rev22.avif" class="rev-img"/>
-                  <img src="images/rev2.avif" class="rev-img"/>
-                </div>
+
+                  <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                    <h4 class="tajawal-bold"> عمر </h4>
+                    <span class="tajawal-regular age">  منذ عامين  </span>
+                  </div>
+                  <p class="tajawal-medium">  منتج رائع ودكي التصميم، وصل بجودة جيدة، كما هو موصوف في الصور، خفيف الوزن و يتوفر على جميع المميزات المشاؤ إليها في الموقع. </p>
+                  <div class="d-flex align-items-center justify-content-start">
+                    <img src="images/rev22.avif" class="rev-img"/>
+                    <img src="images/rev2.avif" class="rev-img"/>
+                  </div>
               </div>
 
             </div>
 
             <div class="row d-flex flex-column align-items-center justify-content-center mt-5 ">
-              <button class="show-more tajawal-bold">  عرض المزيد  </button>
+              <button class="show-more tajawal-bold" id="show-more">  عرض المزيد  </button>
             </div>
 
           </div>
@@ -1380,7 +1435,7 @@
 
 
 
-        <section id="questions" class="mt-5 mb-5">
+        <section id="questions" class="mt-5 ">
           <div class="container">
             <div class="row pt-2 d-flex questions-container">
 
@@ -1398,86 +1453,104 @@
                 <div class="accordion accordion-flush" id="accordionFlushExample">
 
                   <div class="accordion-element main-border">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <div class="acc-title">
-                          <img src="images/star.svg" class="logo-img"/>
-                          <span class="tajawal-bold">متى سوف يشحن طلبي؟</span>
+                    <h2 class="accordion-header" id="flush-headingQuesOne">
+                      <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQuesOne" aria-expanded="false" aria-controls="flush-collapseQuesOne" style="background-color: #fff !important;">
+                        <div class="btn-title">
+                          <div>
+                            <img src="images/logo.svg" class="logo-img"/>
+                            <span class="tajawal-bold">متى سوف يشحن طلبي؟</span>
+                          </div>
+                          <i class="fa-solid fa-angle-down"></i>
                         </div>
                       </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseQuesOne" class="accordion-collapse collapse" aria-labelledby="flush-headingQuesOne" data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body"> تتم معالجة الطلبات وشحنها عادة في غضون 3 أيام عمل من تاريخ الشراء. </div>
                     </div>
                   </div>
 
                   <div class="accordion-element main-border">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        <div class="acc-title">
-                          <img src="images/star.svg" class="logo-img"/>
-                          <span class="tajawal-bold">كم تستغرق عملية الشحن من الوقت؟</span>
+                    <h2 class="accordion-header" id="flush-headingQuesTwo">
+                      <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQuesTwo" aria-expanded="false" aria-controls="flush-collapseQuesTwo" >
+                        <div class="btn-title">
+                          <div>
+                            <img src="images/logo.svg" class="logo-img"/>
+                            <span class="tajawal-bold">كم تستغرق عملية الشحن من الوقت؟</span>
+                          </div>
+                          <i class="fa-solid fa-angle-down"></i>
                         </div>
                       </button>
                     </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseQuesTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingQuesTwo" data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">  تختلف أوقات الشحن نظرًا لأننا نشحن إلى جميع أنحاء العالم من مراكز الشحن المختلفة بناءً على موقعك. متوسط مذة الشحن بين 7 و 20 يوم عمل. سيتم تحديث رقم التتبع الخاص بك بعد 3/7 أيام من شحن طلبك. </div>
                     </div>
                   </div>
 
                   <div class="accordion-element main-border">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        <div class="acc-title">
-                          <img src="images/star.svg" class="logo-img"/>
-                          <span class="tajawal-bold">كيف يمكنني إلغاء طلب؟</span>
+                    <h2 class="accordion-header" id="flush-headingQuesThree">
+                      <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQuesThree" aria-expanded="false" aria-controls="flush-collapseQuesThree" style="background-color: #fff !important;">
+                        <div class="btn-title">
+                          <div>
+                            <img src="images/logo.svg" class="logo-img"/>
+                            <span class="tajawal-bold">كيف يمكنني إلغاء طلب؟</span>
+                          </div>
+                          <i class="fa-solid fa-angle-down"></i>
                         </div>
                       </button>
                     </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseQuesThree" class="accordion-collapse collapse" aria-labelledby="flush-headingQuesThree" data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body"> نحن قادرون فقط على إلغاء الطلبات في غضون الـ 12 ساعة الأولى بعد تقديم الطلب. وبعد ذلك تمت معالجة الطلب على الأرجح والاستعداد للشحن . وبمجرد أن يصبح هذا ساريًا ، يصبح الأمر بعيدًا عن أيدينا. نحن نعتذر عن أي إزعاج قد يسببه هذا الأمر ، لكننا نفخر بأنفسنا لتقديم الخدمة السريعة وهذا يشمل إخراج طلباتك في أسرع وقت ممكن </div>
                     </div>
                   </div>
 
 
                   <div class="accordion-element main-border">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        <div class="acc-title">
-                          <img src="images/star.svg" class="logo-img"/>
-                          <span class="tajawal-bold">  ماهي سياسة الالغاء </span>
+                    <h2 class="accordion-header" id="flush-headingQuesFour">
+                      <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQuesFour" aria-expanded="false" aria-controls="flush-collapseQuesFour" style="background-color: #fff !important;">
+                        <div class="btn-title">
+                          <div>
+                            <img src="images/logo.svg" class="logo-img"/>
+                            <span class="tajawal-bold">ماهي سياسة الالغاء</span>
+                          </div>
+                          <i class="fa-solid fa-angle-down"></i>
                         </div>
                       </button>
                     </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">  إذا كان هناك خطأ ما في طلبك (منتج معيب ، أو طلب غير صحيح ، أو طلب تالف ، وما إلى ذلك) ، فيرجى الاتصال بنا في غضون 7 أيام من استلام طلبك وسيسعدنا مساعدتك في مراجعة الحالة وإذا تمت الموافقة عليها ، فسنقوم بذلك سيتم إرسال بديل. يرجى عدم إرجاع أي شيء قبل مراجعة الحالة ، وسيقوم فريق خدمة العملاء لدينا بمراجعة الطلب وإرسال المزيد من التعليمات. يحتفظ My Store بالحق في رفض أي طلب إرجاع. سيتم فرض رسوم على العملاء مرة واحدة فقط مقابل تكاليف الشحن (بما في ذلك المرتجعات) ، لا يتم تحصيل رسوم إعادة التخزين من المستهلكين مقابل إرجاع المنتج. بالنسبة للطلبات التي تزيد عن 99.00 دولارًا أمريكيًا ، يحتاج العملاء إلى دفع تكاليف الإرجاع ؛ بالنسبة للطلبات التي تقل قيمتها عن 99 دولارًا أمريكيًا ، لا تحتاج تكاليف شحن الإرجاع. رسوم الشحن الأصلية غير قابلة للاسترداد.  </div>
+                    <div id="flush-collapseQuesFour" class="accordion-collapse collapse" aria-labelledby="flush-headingQuesFour" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">  إذا كان هناك خطأ ما في طلبك (منتج معيب ، أو طلب غير صحيح ، أو طلب تالف ، وما إلى ذلك) ، فيرجى الاتصال بنا في غضون 7 أيام من استلام طلبك وسيسعدنا مساعدتك في مراجعة الحالة وإذا تمت الموافقة عليها ، فسنقوم بذلك سيتم إرسال بديل. يرجى عدم إرجاع أي شيء قبل مراجعة الحالة ، وسيقوم فريق خدمة العملاء لدينا بمراجعة الطلب وإرسال المزيد من التعليمات. يحتفظ My Store بالحق في رفض أي طلب إرجاع. سيتم فرض رسوم على العملاء مرة واحدة فقط مقابل تكاليف الشحن (بما في ذلك المرتجعات) ، لا يتم تحصيل رسوم إعادة التخزين من المستهلكين مقابل إرجاع المنتج. بالنسبة للطلبات التي تزيد عن 99.00 دولارًا أمريكيًا ، يحتاج العملاء إلى دفع تكاليف الإرجاع ؛ بالنسبة للطلبات التي تقل قيمتها عن 99 دولارًا أمريكيًا ، لا تحتاج تكاليف شحن الإرجاع. رسوم الشحن الأصلية غير قابلة للاسترداد. </div>
                     </div>
                   </div>
 
                   <div class="accordion-element main-border">
-                    <h2 class="accordion-header" id="flush-headingSix">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                        <div class="acc-title">
-                          <img src="images/star.svg" class="logo-img"/>
-                          <span class="tajawal-bold"> كم تستغرق عملية الشحن من الوقت؟ </span>
+                    <h2 class="accordion-header" id="flush-headingQuesFive">
+                      <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQuesFive" aria-expanded="false" aria-controls="flush-collapseQuesFive" style="background-color: #fff !important;">
+                        <div class="btn-title">
+                          <div>
+                            <img src="images/logo.svg" class="logo-img"/>
+                            <span class="tajawal-bold">كم تستغرق عملية الشحن من الوقت؟</span>
+                          </div>
+                          <i class="fa-solid fa-angle-down"></i>
                         </div>
                       </button>
                     </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseQuesFive" class="accordion-collapse collapse" aria-labelledby="flush-headingQuesFive" data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body"> تختلف أوقات الشحن نظرًا لأننا نشحن إلى جميع أنحاء العالم من مراكز الشحن المختلفة بناءً على موقعك. متوسط مذة الشحن بين 7 و 20 يوم عمل. سيتم تحديث رقم التتبع الخاص بك بعد 3/7 أيام من شحن طلبك. </div>
                     </div>
                   </div>
 
                   <div class="accordion-element main-border">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <div class="acc-title">
-                          <img src="images/star.svg" class="logo-img"/>
-                          <span class="tajawal-bold"> كم تستغرق عملية الشحن من الوقت؟ </span>
+                    <h2 class="accordion-header" id="flush-headingQuesSix">
+                      <button class="accordion-butn w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQuesSix" aria-expanded="false" aria-controls="flush-collapseQuesSix" style="background-color: #fff !important;">
+                        <div class="btn-title">
+                          <div>
+                            <img src="images/logo.svg" class="logo-img"/>
+                            <span class="tajawal-bold">كم تستغرق عملية الشحن من الوقت؟</span>
+                          </div>
+                          <i class="fa-solid fa-angle-down"></i>
                         </div>
                       </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseQuesSix" class="accordion-collapse collapse" aria-labelledby="flush-headingQuesSix" data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body"> تختلف أوقات الشحن نظرًا لأننا نشحن إلى جميع أنحاء العالم من مراكز الشحن المختلفة بناءً على موقعك. متوسط مذة الشحن بين 7 و 20 يوم عمل. سيتم تحديث رقم التتبع الخاص بك بعد 3/7 أيام من شحن طلبك. </div>
                     </div>
                   </div>
@@ -1490,22 +1563,22 @@
         </section>
 
 
-        <section id="delivery" class="mt-5 mb-5">
+        <section id="delivery">
           <div class="container">
-            <div class="row d-flex align-items-center justify-content-around pt-3 ">
-              <div class="col-lg-3 col-md-5 col-sm-5 d-flex ">
+            <div class="row delivery-container ">
+              <div class="col-lg-3 col-md-6 col-sm-6  item">
                 <img src="images/payment.svg" />
                 <p class="tajawal-bold"> الدفع عند الاستلام </p>
               </div>
-              <div class="col-lg-3 col-md-5 col-sm-5 d-flex ">
+              <div class="col-lg-3 col-md-6 col-sm-6  item">
                 <img src="images/delivery.svg" />
                 <p class="tajawal-bold">   توصيل سريع </p>
               </div>
-              <div class="col-lg-3 col-md-5 col-sm-5 d-flex ">
+              <div class="col-lg-3 col-md-6 col-sm-6  item">
                 <img src="images/check.svg" />
                 <p class="tajawal-bold">  30 يوم ضمان  </p>
               </div>
-              <div class="col-lg-3 col-md-5 col-sm-5 d-flex ">
+              <div class="col-lg-3 col-md-6 col-sm-6  item">
                 <img src="images/mobile.svg" />
                 <p class="tajawal-bold"> 24/7 الدعم   </p>
               </div>
@@ -1535,7 +1608,7 @@
                 
               </div>
             </div>
-            <div class="row mb-5">
+            <div class="row">
                 <div class="col-12 d-flex align-items-center justify-content-between mb-5 copy-right">
                   <div class="col-lg-6 col-md-12 col-sm-12  right">
                     <p> .Copyright © 2022. Template Made by <span>Lightfunnels</span>  </p>
@@ -1552,6 +1625,9 @@
         <script src="js/all.min.js"></script>
         <script src="js/main.js" ></script>
 
+        <!-- head timer -->
+        <script src="js/timer.js" ></script>
+
         <!-- jquery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
         </script>
@@ -1559,6 +1635,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
         </script>
         <script src="js/flip-clock.js" ></script>
+
+        
         
       </body>
     </html>
